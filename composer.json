@@ -1,0 +1,36 @@
+{
+    "name": "equipo-alfa-buena-onda-dinamita-escuadron-lobo/pretty-bread",
+    "description": "'proyecto de tecnologias de desarrollo web en uvm'",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "APP\\": "app/",
+            "Http\\": "app/Http/",
+            "Controllers\\": "app/Http/Controllers",
+            "Classes\\": "app/Src/Classes",
+            "Abstract\\": "app/Src/Abstract"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Alan Diaz Yañez",
+            "email": "alandiazyanez@outlook.com"
+        },
+        {
+            "name": "Ramiro de la Cruz Navarro"
+        },
+        {
+            "name": "Jonathan Ledesma Miranda",
+            "email": "dragonrose.jl.jl@gmail.com"
+        },
+        {
+            "name": "Alfredo Cruces Ruiz",
+            "email": "dranzx12222222@gmail.com"
+        }
+    ],
+    "require": {}
+}
