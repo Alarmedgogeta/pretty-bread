@@ -11,4 +11,12 @@ if (!function_exists('viewPath')) {
   {
     return __DIR__ . "/../views/$view.php";
   }
+
+}
+
+if (!function_exists('Saludar')) {
+  function Saludar()
+  {
+    echo "hola mundo";
+  }
 }
