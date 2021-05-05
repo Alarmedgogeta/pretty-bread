@@ -1,0 +1,499 @@
+@media screen {
+    h1,h2,h3,h4,h5,h6,p,label,span, form{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    div{
+        /* border: 1px black groove; */
+        padding: 4px;
+    }
+/* -----------HOME---------- */
+    .head_,.foot_{
+        position: sticky;
+    }
+    .head_{
+    /* background-color: blue; */
+    top:0;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    }
+    .head_I, .head_D{
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        }
+    .head_I{
+        width: 210px;
+        height: 80px;
+        background-color: cornsilk;
+        border: 2px solid rgb(207, 186, 100);
+        }   
+        .icon_Cage{
+        background:#fff;
+        width: 33%;
+    }
+    .icon{
+        height: 100%;
+        width: 60px;
+    }
+        .head_C{
+            width: 560px;
+            position: absolute;
+            top: 0;
+            left: 560px;
+            height: 99px;
+            background-color: cornsilk;
+            border: 1px solid rgb(170, 170, 170);
+        }
+    .head_D{
+        width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: cornsilk;
+        border: 1px solid rgb(170, 170, 170);
+        }
+        .head_D .head_D_opc1, .head_D .head_D_opc2{
+            height: 50px;
+            background: rgb(248, 197, 56);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 35px;
+            }
+     .head_D .head_D_opc1{
+        width: 290px;
+        }
+     .head_D .head_D_opc2{
+        width: 590px;
+        }
+        .Link_Men:hover{
+            color: rgb(104, 199, 3);
+            cursor: pointer;
+        }
+.body_IMGS-arrow_ARRW{
+    background: rgb(58, 199, 255);
+    height: 1vw;
+    width: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.body_IMGS-arrow_ARRW:hover{
+    background: rgb(181, 234, 255);
+    height: 2.5vw;
+    width: 2.5vw;
+
+    font-size: 2vw;
+    opacity: 0.8;
+    transition: 100ms;
+}
+
+.body_IMGS-animated{
+    background: rgba(185, 185, 185, 0.514);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 0vw;
+    margin-top: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+/*Contenedor-> Position: Relative;*/
+/*img-> Position: Absolute;*/
+
+/*object-fit: cover; --Investigar---*/
+.body_IMGS-animated_{
+    margin: 5px;
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("cuernito.jpg");
+    background-position: center;
+}
+.Bake:hover{
+    /* color: violet; */
+    font-size: 50px;
+    transition: 200ms;
+    cursor: pointer;
+}
+.Bake{
+    color: rgb(204, 139, 0);
+    background-color: rgba(255, 235, 205, 0.925);
+    border: unset;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* -------Foot-------- */
+    .foot_{
+        bottom: 0;
+        background-color: cornsilk;
+        display: flex;
+        justify-content: space-between;
+        padding: .4vw;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .foot_ .foot_I, .foot_ .foot_D{
+        background-color: rgb(255, 161, 21);
+        color: rgb(251, 255, 0);
+        padding: 5px;
+    }
+    .foot_D{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .foot_D .btn{
+        width: 13vw;
+    }
+    .btn{
+        font-style: unset;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        background: rgb(9, 179, 32);
+        border: lawngreen;
+        height: 90%;
+    }
+    .foot_I{
+    width: 45vw;
+    }
+    .foot_I_Aviso{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+/* -------------TIENDA------------- */
+
+.body_{
+    /* background: rgb(255, 58, 58); */
+    display: flex;
+    flex-direction: row;
+
+}
+.body_Filtr{
+    background: rgb(235, 235, 235);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    width: 24%;
+    margin-top: 2px;
+    padding-left: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.body_container_Prd{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+.body_Filtr_Bs{
+    height: 150px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    /* background: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+}
+.Nums{
+    width: 10vw;
+}
+
+.body_Products{
+    /* background: rgb(143, 143, 143); */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.body_Products_vw{
+    background: rgb(179, 116, 0);
+    height: auto;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.body_Products_vw-img{
+    background: rgb(236, 162, 50);
+    height: 11.5vw;
+    border-radius: 10px;
+    margin-top: 1.5vw;
+}
+.body_Products_vw-name{
+    background: rgb(218, 160, 0);
+    height: 4vw;
+    font-size: 3vw;
+}
+.body_Products_vw-price{
+    background: rgb(255, 184, 103);
+    height: 3vw;
+    font-size: 2.5vw;
+}
+.body_Products_vw-desc{
+    background: rgb(247, 247, 247);
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    width: 330px;
+    margin-bottom: 9px;
+}
+.prod{
+    font-family: cursive;
+}
+ .body_Products_vw-price,
+.body_Products_vw-img, .body_Products_vw-name{
+    width: 19vw;
+    margin: .5vw;
+    padding: 0vw;
+}
+.body_Products_vw-btn{
+    height: 60px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    border: hidden;
+}
+#btn_c{
+    width: 140px;
+    margin-bottom: 1vw;
+    color: black;
+}
+.body_Products_vw-desc, .body_Products_vw-price,
+.body_Products_vw-name{
+    margin-top: 0vw;
+}
+#cuernito{
+    margin-top: 0vw;
+    height: 11.5vw;
+    width: 19vw;
+    border-radius: 1px;
+}
+
+/* ---------TARJETA--------- */
+.head_2{
+    /* background-color: violet; */
+    padding: 0px;
+}
+.head_Menu{
+    /* background-color: rgb(71, 149, 223); */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.head_Menu #Titu{
+    background-color: rgb(255, 163, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width:11%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head_Menu .head_Menu-{
+    background-color: rgb(151, 81, 0);
+    display: flex;
+    justify-content: flex-end;
+    width: 89%;
+    height: 70%;
+}
+.head_Menu .head_Menu-opc {
+    /* background-color: rgb(241, 21, 168); */
+    font-size: 20px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: solid rgb(255, 202, 103);
+    color: white;
+}
+.head_Menu-opc:hover{
+    color: black;
+    background-color: rgb(255, 202, 103);
+    cursor: pointer;
+}
+.head_main{
+    width: 70vw;
+    background-color: lightslategray;
+    height: 40px;
+}
+.TLabel{
+    font-size: 23px;
+}
+.body_TC_Mainext{
+    /* background-color: rgb(252, 0, 218); */
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.body_TC_avance{
+    height: 50px;
+    border: none;  
+    border-bottom: 4px black solid;
+    display: flex;
+    align-items: center;
+
+}
+.body_TC_avance_{
+    display: flex;
+    justify-content: space-between;
+    border: 2px none;
+    width: 480px;
+    font-size: 20px;
+}
+.body_TC_Tarjs{
+    font-size: 38px;
+    background-color: rgb(196, 196, 196);
+    height: 3.5vw;
+    display: flex;
+    align-items: center;
+}
+.body_TC_{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    width: 85vw;
+}
+.body_TC_NomNumYFechCs{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 460px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.body_TC_TCD,.body_TC_NomyNum, .body_TC_FexyCS{
+    /* background-color: cornflowerblue; */
+    display: flex;
+}
+.body_TC_TCD{
+    height: 130px;
+    /* background: rgb(255, 102, 102); */
+}
+.body_TC_NomyNum, .body_TC_FexyCS{
+    justify-content: space-between;
+    height: 120px;
+}
+.body_TC_NomyNum_Col1{
+    width: 320px;
+    padding-right: 20px;
+    border-right: 4px solid  rgb(196, 196, 196);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.body_TC_NomyNum_Col2{
+    width: 940px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#TC{
+    height: 55px;
+}
+#TD{
+    height: 55px;
+    width: 900px;
+}
+input, select{
+    color: rgba(24, 23, 23, 0.507);
+    font-size: initial;
+}
+.Link_Men,.Titulo,.TLabel,.Letra{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body_TC_NomyNum_I,.body_TC_NomyNum_R {
+    height: 50px;
+    width: 29vw;
+    display: flex;
+}
+.body_TC_FexyCS_Col1{
+    height: 110px;
+}
+.body_TC_FexyCS_Col1_MA{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+.body_TC_FexyCS_Col2{
+    width: 40vw;
+    height: 110px;
+}
+.body_TC_FexyCS_Col2_{
+    width: 40vw;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_TC_Btn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0vw;
+    height: 7vw;
+}
+.aster{
+    font-size: 2vw;
+    font-weight: bold;
+    color: crimson;
+}
+.Letra{
+    font-size: 35px;
+}
+#sig{
+    width: 40vw;
+    height: 3vw;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    background-color: rgb(100, 190, 9);
+}
+#Cv_1{
+    width: 240px;
+    height: 50px;
+    margin-left: 10px;
+}
+#txtNom,#cs,#txtNum{
+    height: 2vw;
+    font-size: 25px;
+}
+.M_A{
+    font-size: 24px;
+    width: 70px;
+    height: auto;
+}
+#cs{
+    width: 100px;
+    
+}
+#txtNom{
+    width: 350px;
+}
+#txtNum{
+    width: 340px;
+}
+
+}
