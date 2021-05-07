@@ -65,7 +65,7 @@ body {
 .content {
   width: 100%;
   min-height: 70vh;
-  background-color: rgb(209, 115, 0);
+  background-color: #f5f5f5;
 }
 
 .footer {
@@ -75,7 +75,7 @@ body {
 
 .footer ul {
   width: 100%;
-  background-color: goldenrod;
+  background-color: rgb(248, 190, 44);
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -170,7 +170,7 @@ body {
   min-height: 85vh;
   display: flex;
   justify-content: center;
-  background-color: rgb(153, 105, 0);
+  background-color: #f5f5f5;
 }
 .main__container {
   margin: 10vh 0;
