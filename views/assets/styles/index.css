@@ -89,7 +89,7 @@ body {
   margin: 0 25px;
 }
 .fab{
-  font-size: 26px;
+  font-size: 30px;
   margin-right: 10px;
   border-radius: 5px;
   border-bottom: 0px;
@@ -97,8 +97,6 @@ body {
   
 }
 .fab:hover{
-  font-size: 30px;
-  transition: 0.5s;
   cursor: pointer;
 }
 .fa-facebook-square{
@@ -114,10 +112,10 @@ body {
 }
 
 .footer-link:active{
-  color: rgb(255, 0, 149);
+  color: rgb(255, 255, 255);
 }
 .footer-link:link{
-  color: rgb(121, 0, 115);
+  color: rgb(4, 22, 124);
 }
 
 @media screen and (max-width: 500px) {
