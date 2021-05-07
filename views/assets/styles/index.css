@@ -82,6 +82,7 @@ body {
   margin: 0;
   padding: 20px 0;
   border: 3px dotted maroon;
+  border-radius: 5px;
 }
 
 .footer ul li {
@@ -201,13 +202,14 @@ body {
   background-color: white;
   border-radius: 20px;
   height: auto;
+  border: 1px solid rgb(184, 184, 184);
 }
 
 .main__container--title {
   width: 100%;
   background-color: rgb(156, 156, 156);
   border-radius: 5px;
-  border-bottom: solid rgb(107, 107, 107) 1px;
+  border-bottom: 3px solid rgb(107, 107, 107) 1px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
