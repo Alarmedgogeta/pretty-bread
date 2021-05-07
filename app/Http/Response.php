@@ -32,7 +32,7 @@ class Response
   {
     $view = $this->getView();
     $page = $this->getPage();
-    $content = file_get_contents(viewPath($view));
+    $content = viewPath($view);
     require viewPath('layout');
   }
 }

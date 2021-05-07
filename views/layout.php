@@ -37,7 +37,11 @@
       </li>
     </ul>
   </div>
-  <div class="content"><?= $content ?></div>
+  <div class="content">
+    <?php
+    require_once $content;
+    ?>
+  </div>
   <div class="footer">
     <ul>
       <li>
