@@ -344,3 +344,53 @@ form {
   background-color: rgb(92, 0, 153);
   border-color: rgb(71, 2, 117);
 }
+
+/* productos.php */
+
+.items__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.item_card {
+  border: solid 1px slateblue;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.item_card__container {
+  display: flex;
+}
+
+.item_card__container--cover {
+  width: 20%;
+}
+
+.item_card__container--content {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.item_card__container--actions {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item_card__container--actions a {
+  width: 45%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgb(0, 39, 157);
+  border-color: rgb(4, 30, 108);
+  color: white;
+}
+
+.item_card__container--actions a:hover {
+  cursor: pointer;
+  background-color: rgb(92, 0, 153);
+  border-color: rgb(71, 2, 117);
+}
