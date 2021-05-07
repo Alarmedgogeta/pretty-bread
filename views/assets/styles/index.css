@@ -85,18 +85,38 @@ body {
 }
 
 .footer ul li {
-  margin: 0 25px;  
-  background-color: rgb(255, 156, 123);
-  border: rgb(173, 118, 0) solid 1px;
+  margin: 0 25px;
 }
+.fab{
+  font-size: 26px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-bottom: 0px;
+  border-top: 0px;
+  
+}
+.fab:hover{
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.fa-facebook-square{
+  color: blue;
+}
+
+.fa-twitter-square{
+  color: rgb(0, 195, 255);
+}
+
+.fa-instagram-square{
+  color: rgb(255, 0, 200);
+}
+
 .footer-link:active{
-  color: aliceblue;
+  color: rgb(255, 0, 149);
 }
 .footer-link:link{
   color: rgb(121, 0, 115);
-}
-.footer-link:visited{
-  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 500px) {

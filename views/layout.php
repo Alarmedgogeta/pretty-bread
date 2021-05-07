@@ -106,9 +106,9 @@ if ($hasUser) {
         <a href="#" class="footer-link">Términos y Condiciones</a>
       </li>
       <li>
-        <i class="fab fa-facebook-square"  class="icono"></i>
-        <i class="fab fa-twitter-square"   class="icono"></i>
-        <i class="fab fa-instagram-square" class="icono"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
       </li>
     </ul>
   </div>
