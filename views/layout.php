@@ -19,8 +19,8 @@ if ($hasUser) {
 </head>
 <body>
   <div class="header">
-    <a href="/inicio" class="logo">Pretty Bread</a>
-    <i class="fas fa-home"></i>
+    <a href="/inicio" class="logo">Pretty Bread <i class="fas fa-home"></i></a>
+    
     <ul class="header-right">
       <li class="header-menu">
         <?php
@@ -103,7 +103,7 @@ if ($hasUser) {
   <div class="footer">
     <ul>
       <li>
-        <a href="#" class="footer-link">Terminos y condiciones</a>
+        <a href="#" class="footer-link">Términos y Condiciones</a>
       </li>
       <li>
         <i class="fab fa-facebook-square"  class="icono"></i>

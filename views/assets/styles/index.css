@@ -98,12 +98,6 @@ body {
 .footer-link:visited{
   color: rgb(255, 255, 255);
 }
-.icono{
-  font-size: 15px;
-  color: aliceblue;
-}
-
-
 
 @media screen and (max-width: 500px) {
   .header a {
@@ -191,8 +185,13 @@ body {
 
 .main__container--title {
   width: 100%;
-  border-bottom: solid whitesmoke 1px;
+  background-color: rgb(156, 156, 156);
+  border-radius: 5px;
+  border-bottom: solid rgb(107, 107, 107) 1px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .main__container--content {
