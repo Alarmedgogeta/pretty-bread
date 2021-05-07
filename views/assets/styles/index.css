@@ -23,11 +23,10 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-  color: chocolate;
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: rgb(245, 139, 0);
   color: black;
 }
 
