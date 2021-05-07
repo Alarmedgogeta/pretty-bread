@@ -314,6 +314,7 @@ form {
   width: 100%;
   display:  flex;
   flex-direction: column;
+  border: darkgreen 2px solid;
 }
 
 .address_card {
