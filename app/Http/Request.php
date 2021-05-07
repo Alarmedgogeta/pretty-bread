@@ -67,6 +67,7 @@ class Request
 
     try {
       if ( $response instanceof Response ) {
+        $response->setPage($this->controller);
         $response->send();
       } else {
         throw new Exception("Error Processing Request", 1);

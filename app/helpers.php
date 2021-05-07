@@ -1,8 +1,10 @@
 <?php
 
-if(!function_exists('view')) {
+use Http\Response;
+
+if (!function_exists('view')) {
   function view($view) {
-    // return new
+    return new Response($view);
   }
 }
 
@@ -159,12 +161,3 @@ if (!function_exists('startsWith')) {
     return substr($haystack, 0, $length) === $needle;
   }
 }
-
-/**
- * if (!function_exists('')) {
-  *  function ()
-  *  {
-  *    # code...
-  *  }
-  * }
-*/
