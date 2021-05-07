@@ -158,7 +158,7 @@ body {
   min-height: 85vh;
   display: flex;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: rgb(199, 136, 0);
 }
 .main__container {
   margin: 10vh 0;
@@ -244,7 +244,7 @@ form {
 .store__container {
   width: 85%;
   display: flex;
-  background-color: white;
+  background-color: rgb(218, 153, 34);
 }
 .products {
   width: 100%;
