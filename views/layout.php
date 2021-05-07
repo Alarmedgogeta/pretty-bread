@@ -102,10 +102,10 @@ if ($hasUser) {
   <div class="footer">
     <ul>
       <li>
-        <a href="#">Terminos y condiciones</a>
+        <a href="#" class="footer-link">Terminos y condiciones</a>
       </li>
       <li>
-        <a href="#">Redes sociales</a>
+        <a href="#"  class="footer-link">Redes sociales</a>
       </li>
     </ul>
   </div>
