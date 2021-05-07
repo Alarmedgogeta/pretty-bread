@@ -5,6 +5,7 @@
     </div>
     <div class="main__container--content">
       <p>Este proyecto se ha creado con el fin de entender las Tecnologías de Construcción Web, para la construcción Full-Stack de Páginas Web.</p>
+      <p>Su diseño ha sido eleborado para la venta de panes.</p>
       <p>El proyecto ha sido desarrollado por estudiantes de la Universidad del Valle de México, Campus Villa Hermosa y San Rafael.</p>
       <p>Para su construcción se emplearon los lenguajes PHP, CSS, HTML y SQL.</p>
     </div>
