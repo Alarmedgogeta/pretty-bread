@@ -1,85 +1,36 @@
 <?php
-$categorias = [];
+
+use Classes\Categoria;
+
+open_db_connection();
+$categories = Categoria::getAllCategorias('activo = 1');
+close_db_connection();
+$rows = array_chunk($categories, 3);
+
 ?>
 <div class="categories">
-  <div class="categories__container">
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
+  <?php
+  foreach ($rows as $row) {
+    ?>
+    <div class="categories__container">
+      <?php
+      foreach ($row as $categoria) {
+        ?>
+        <div class="category">
+          <div class="category__container">
+            <div class="category__container--name">
+              <span><?= $categoria->nombre ?></span>
+            </div>
+            <div class="category__container--img">
+              <img src="<?= $categoria->portada ?>" alt="imagen_categoria" />
+            </div>
+          </div>
         </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
+        <?php
+      }
+      ?>
     </div>
-    
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
-        </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
-    </div>
-    
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
-        </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="categories__container">
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
-        </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
-    </div>
-    
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
-        </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
-    </div>
-    
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
-        </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="categories__container">
-    <div class="category">
-      <div class="category__container">
-        <div class="category__container--name">
-          <span>Nombre de la categoría</span>
-        </div>
-        <div class="category__container--img">
-          <img src="https://theartisanbakery.com/wp-content/uploads/2020/10/002A3416-353x353.jpg" alt="imagen_categoria" />
-        </div>
-      </div>
-    </div>
-  </div>
+    <?php
+  }
+  ?>
 </div>

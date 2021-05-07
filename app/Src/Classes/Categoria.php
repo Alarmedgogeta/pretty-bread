@@ -11,6 +11,7 @@ class Categoria extends Entity
   public $portada;
 
   private static $NOMBRE_DE_LA_ENTIDAD = 'categorias';
+  private static $URL_BASE = 'http://localhost/uploads/img/categories/';
   
   public function __construct(
     string $nombre,
@@ -22,7 +23,7 @@ class Categoria extends Entity
     $this->id = $id;
     $this->nombre = $nombre;
     $this->descripcion = $descripcion;
-    $this->portada = $portada;
+    $this->portada = startsWith($portada, Categoria::$URL_BASE) ? $portada : Categoria::$URL_BASE . $portada;
   }
 
   function loadInstance()

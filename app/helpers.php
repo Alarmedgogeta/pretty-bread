@@ -177,3 +177,15 @@ if (!function_exists('startsWith')) {
     return substr($haystack, 0, $length) === $needle;
   }
 }
+
+if (!function_exists(('isImage'))) {
+  function isImage($file)
+  {
+    $check = getimagesize($file["tmp_name"]);
+    if($check !== false) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
