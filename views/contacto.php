@@ -4,7 +4,9 @@
       <h1>Contactanos</h1>
     </div>
     <div class="main__container--content">
-      <p>If you would like to stock our baked goods for your café, deli or shop or would like to use our products as ingredients in your restaurant, deli or café please contact us on:</p>
+      <p>Si tiene dudas respecto a los servicios de nuestra empresa, has nos llegar tus inquietudes. 
+          Llena los espacios en blanco con los datos que se solicitan y al final ingresa tus dudas.
+      </p>
       <div>
         <span>020 8961 5931</span>
         <span>orders@theartisanbakery.com</span>
@@ -34,7 +36,7 @@
         </div>
         <div class="formulario--grupo">
           <div class="formulario--input w-100">
-            <label for="tel">Telefono:</label>
+            <label for="tel">Teléfono:</label>
             <input id="tel" name="tel" type="text" required />
           </div>
         </div>
