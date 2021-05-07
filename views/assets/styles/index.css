@@ -1,10 +1,13 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 .header {
-  overflow: scroll;
+  display: flex;
+  justify-content: space-between;
+  
   background-color: rgb(216, 140, 0);
   padding: 20px 10px;
 }
@@ -64,7 +67,7 @@ body {
 
 .content {
   width: 100%;
-  min-height: 70vh;
+  min-height: 82vh;
   background-color: #f5f5f5;
 }
 
@@ -118,11 +121,9 @@ body {
   color: rgb(4, 22, 124);
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
   }
   
   .header-right {
@@ -205,12 +206,13 @@ body {
 
 .main__container--title {
   width: 100%;
-  background-color: rgb(156, 156, 156);
+  background-color: #ffb81e;
   border-radius: 5px;
   border-bottom: 3px solid rgb(107, 107, 107) 1px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  color: white;
   
 }
 

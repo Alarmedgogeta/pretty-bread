@@ -54,7 +54,7 @@ if ( isset($_POST['email']) && isset($_POST['pass']) && isset($_POST['nombre']) 
           <div class="formulario--grupo">
             <div class="formulario--input w-100">
               <label for="pass">Contraseña:</label>
-              <input id="pass" name="pass" type="text" required />
+              <input id="pass" name="pass" type="password" required />
             </div>
           </div>
           <div class="formulario--grupo">

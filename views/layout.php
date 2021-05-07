@@ -62,7 +62,7 @@ if ($hasUser) {
         <?php
         if ($hasUser) {
         ?>
-          <a class="<?= $page === 'cuenta' ? 'active' : '' ?>" href="/cuenta/datos"><?= "Hola $user->nombre $user->apellidos" ?> <i class="fas fa-sort-down"></i></a>
+          <a class="<?= $page === 'cuenta' ? 'active' : '' ?>" href="/cuenta/datos"><?= "Hola $user->nombre" ?> <i class="fas fa-sort-down"></i></a>
           <ul class="header-sub-menu">
             <li>
               <a href="/cuenta/datos">Mis datos</a>
