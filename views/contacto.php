@@ -1,7 +1,7 @@
 <div class="main">
   <div class="main__container">
     <div class="main__container--title">
-      <h1>Contactanos</h1>
+      <h1>Contáctanos</h1>
     </div>
     <div class="main__container--content">
       <p>Si tiene dudas respecto a los servicios de nuestra empresa, has nos llegar tus inquietudes. 
