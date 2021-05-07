@@ -263,6 +263,7 @@ form {
   width: 30%;
   border: solid black 1px;
   border-radius: 15px;
+  background-color: khaki;
 }
 
 .product_card__container {
@@ -288,7 +289,6 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: khaki;
 }
 
 .product_card__content--name,
