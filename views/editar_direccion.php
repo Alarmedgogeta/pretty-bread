@@ -11,7 +11,7 @@ close_db_connection();
 <div class="main">
   <div class="main__container">
     <div class="main__container--title">
-      <h1>agregar direccion</h1>
+      <h1>Agregar dirección</h1>
     </div>
     <div class="main__container--content">
       <form action="/cuenta/editar_direccion" method="post">
@@ -40,7 +40,7 @@ close_db_connection();
             <input id="colonia" name="colonia" type="text" value="<?= $direccion->colonia ?>" required />
           </div>
           <div class="formulario--input w-50">
-            <label for="codigo_postal">Codigo postal:</label>
+            <label for="codigo_postal">Código postal:</label>
             <input id="codigo_postal" name="codigo_postal" type="text" value="<?= $direccion->codigo_postal ?>" required />
           </div>
         </div>
@@ -52,11 +52,11 @@ close_db_connection();
         </div>
         <div class="formulario--grupo">
           <div class="formulario--input w-50">
-            <label for="num_int">Numero interior:</label>
+            <label for="num_int">Número interior:</label>
             <input id="num_int" name="num_int" type="text" value="<?= $direccion->num_int ?>" required />
           </div>
           <div class="formulario--input w-50">
-            <label for="num_ext">Numero exterior:</label>
+            <label for="num_ext">Número exterior:</label>
             <input id="num_ext" name="num_ext" type="text" value="<?= $direccion->num_ext ?>" required />
           </div>
         </div>

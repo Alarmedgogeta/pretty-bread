@@ -26,7 +26,7 @@
       }
       ?>
       <div class="formulario--final">
-        <a href="/cuenta/agregar_direccion" class="boton" type="submit">Agregar direccion</a>
+        <a href="/cuenta/agregar_direccion" class="boton" type="submit">Agregar dirección</a>
       </div>
     </div>
   </div>

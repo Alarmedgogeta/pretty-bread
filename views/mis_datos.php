@@ -13,7 +13,7 @@
           </div>
           <div class="formulario--grupo">
             <div class="formulario--input w-100">
-              <label for="pass">Contrasena:</label>
+              <label for="pass">Contraseña:</label>
               <input id="pass" name="pass" type="password" value="<?= $user->getHiddenPass() ?>" disabled />
             </div>
           </div>
@@ -31,7 +31,7 @@
           </div>
           <div class="formulario--grupo">
             <div class="formulario--input w-100">
-              <label for="tel">Telefono:</label>
+              <label for="tel">Teléfono:</label>
               <input id="tel" name="tel" type="text" value="<?= $user->telefono ?>" disabled />
             </div>
           </div>
