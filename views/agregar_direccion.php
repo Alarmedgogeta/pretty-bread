@@ -9,7 +9,7 @@ close_db_connection();
 <div class="main">
   <div class="main__container">
     <div class="main__container--title">
-      <h1>agregar direccion</h1>
+      <h1>Agregar dirección</h1>
     </div>
     <div class="main__container--content">
       <form action="/cuenta/agregar_direccion" method="post">
@@ -37,7 +37,7 @@ close_db_connection();
             <input id="colonia" name="colonia" type="text" required />
           </div>
           <div class="formulario--input w-50">
-            <label for="codigo_postal">Codigo postal:</label>
+            <label for="codigo_postal">Código postal:</label>
             <input id="codigo_postal" name="codigo_postal" type="text" required />
           </div>
         </div>
