@@ -96,8 +96,12 @@ body {
   color: rgb(121, 0, 115);
 }
 .footer-link:visited{
-  color: rgb(222, 0, 252);
+  color: rgb(255, 255, 255);
 }
+.fab fa-instagram-square{
+  color: blue;
+}
+
 
 @media screen and (max-width: 500px) {
   .header a {

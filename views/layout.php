@@ -20,6 +20,7 @@ if ($hasUser) {
 <body>
   <div class="header">
     <a href="/inicio" class="logo">Pretty Bread</a>
+    <i class="fas fa-home"></i>
     <ul class="header-right">
       <li class="header-menu">
         <?php
@@ -106,6 +107,9 @@ if ($hasUser) {
       </li>
       <li>
         <a href="#"  class="footer-link">Redes sociales</a>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
       </li>
     </ul>
   </div>
