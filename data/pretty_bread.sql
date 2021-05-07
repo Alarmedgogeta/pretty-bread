@@ -80,7 +80,6 @@ CREATE TABLE IF NOT EXISTS `pretty_bread`.`direcciones` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `iddirecciones_UNIQUE` (`id` ASC),
   INDEX `fk_direcciones_estados_idx` (`id_estado` ASC),
-  UNIQUE INDEX `codigo_postal_UNIQUE` (`codigo_postal` ASC),
   INDEX `fk_direcciones_usuarios1_idx` (`id_usuario` ASC),
   CONSTRAINT `fk_direcciones_estados`
     FOREIGN KEY (`id_estado`)

@@ -37,8 +37,8 @@ class Usuario extends Entity
   function loadInstance()
   {
     $this->carrito = new CarritoDeUsuario($this->id);
-    $this->direcciones = Direccion::getAllDirecciones("id_usuario = $this->id");
-    $this->pedidos = Pedido::getAllPedidos("id_usuario = $this->id");
+    $this->direcciones = Direccion::getAllDirecciones("id_usuario = $this->id AND activo = 1");
+    $this->pedidos = Pedido::getAllPedidos("id_usuario = $this->id AND activo = 1");
   }
 
   function getAtributes()
@@ -122,5 +122,31 @@ class Usuario extends Entity
       $pass .= '*';
     }
     return $pass;
+  }
+
+  public function addDireccion(Direccion $direccion)
+  {
+    if (!isset($this->direcciones)) {
+      $this->direcciones = [];
+    }
+    foreach ($this->direcciones as $index => $currentDireccion) {
+      if ($currentDireccion->id === $direccion->id) {
+        $this->direcciones[$index] = $direccion;
+        return;
+      }
+    }
+    array_push($this->direcciones, $direccion);
+  }
+
+  public function removeDireccion(Direccion $direccion)
+  {
+    if (isset($this->direcciones) && count($this->direcciones) > 0) {
+      foreach ($this->direcciones as $index => $currentDireccion) {
+        if ($currentDireccion->id === $direccion->id) {
+          array_splice($this->direcciones, $index, 1);
+          return;
+        }
+      }
+    }
   }
 }

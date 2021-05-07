@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+use Classes\Direccion;
 use Classes\Usuario;
 
 class CuentaController
@@ -84,13 +85,81 @@ class CuentaController
   public function agregar_direccion()
   {
     $this->checkLogedId();
+    if ( isset($_POST['estado']) &&
+      isset($_POST['municipio']) &&
+      isset($_POST['colonia']) &&
+      isset($_POST['calle']) &&
+      isset($_POST['codigo_postal']) &&
+      isset($_POST['num_int']) &&
+      isset($_POST['num_ext'])
+    ) {
+      $user = $_SESSION['user'];
+      $direccion = new Direccion(
+        (int) $user->id,
+        (int) $_POST['estado'],
+        (string) $_POST['municipio'],
+        (int) $_POST['codigo_postal'],
+        (string) $_POST['colonia'],
+        (string) $_POST['calle'],
+        (string) $_POST['num_ext'],
+        (string) $_POST['num_int'],
+        (string) $_POST['calle_1'],
+        (string) $_POST['calle_2']
+      );
+      open_db_connection();
+      $direccion->registerDireccion();
+      close_db_connection();
+      $user->addDireccion($direccion);
+      return view('mis_direcciones');
+    }
     return view('agregar_direccion');
   }
 
   public function editar_direccion()
   {
     $this->checkLogedId();
+    if ( isset($_POST['id']) &&
+      isset($_POST['estado']) &&
+      isset($_POST['municipio']) &&
+      isset($_POST['colonia']) &&
+      isset($_POST['calle']) &&
+      isset($_POST['codigo_postal']) &&
+      isset($_POST['num_int']) &&
+      isset($_POST['num_ext'])
+    ) {
+      $user = $_SESSION['user'];
+      $direccion = new Direccion(
+        (int) $user->id,
+        (int) $_POST['estado'],
+        (string) $_POST['municipio'],
+        (int) $_POST['codigo_postal'],
+        (string) $_POST['colonia'],
+        (string) $_POST['calle'],
+        (string) $_POST['num_ext'],
+        (string) $_POST['num_int'],
+        (string) $_POST['calle_1'],
+        (string) $_POST['calle_2'],
+        (int) $_POST['id']
+      );
+      open_db_connection();
+      $direccion->updateDireccion();
+      close_db_connection();
+      $user->addDireccion($direccion);
+      return view('mis_direcciones');
+    }
     return view('editar_direccion');
+  }
+
+  public function eliminar_direccion()
+  {
+    $user = $_SESSION['user'];
+    echo "delete";
+    open_db_connection();
+    $direccion = Direccion::getDireccionById((int) $_GET['id']);
+    $direccion->deleteDireccion();
+    close_db_connection();
+    $user->removeDireccion($direccion);
+    return view('mis_direcciones');
   }
 
   public function pedidos()
