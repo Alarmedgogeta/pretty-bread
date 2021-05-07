@@ -88,8 +88,11 @@ body {
   margin: 0 25px;
 }
 .footer-link{
-  background-color: darksalmon;
+  background-color: rgb(196, 90, 54);
   border: rgb(160, 102, 83) solid 1px;
+}
+.footer-link:active{
+  
 }
 
 @media screen and (max-width: 500px) {
