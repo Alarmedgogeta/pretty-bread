@@ -71,6 +71,7 @@ body {
 .footer {
   display: flex;
   width: 100%;
+  background-color: goldenrod;
 }
 
 .footer ul {
