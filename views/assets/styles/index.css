@@ -85,14 +85,15 @@ body {
 }
 
 .footer ul li {
-  margin: 0 25px;
-}
-.footer-link{
+  margin: 0 25px;  
   background-color: rgb(196, 90, 54);
-  border: rgb(160, 102, 83) solid 1px;
+  border: rgb(160, 102, 83) solid 3px;
 }
 .footer-link:active{
-  
+  color: aliceblue;
+}
+.footer-link:link{
+  color: rgb(143, 0, 136);
 }
 
 @media screen and (max-width: 500px) {
