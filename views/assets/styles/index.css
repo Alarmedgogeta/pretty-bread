@@ -65,6 +65,7 @@ body {
 .content {
   width: 100%;
   min-height: 70vh;
+  background-color: rgb(209, 115, 0);
 }
 
 .footer {
