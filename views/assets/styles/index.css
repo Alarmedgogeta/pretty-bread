@@ -288,6 +288,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: khaki;
 }
 
 .product_card__content--name,
