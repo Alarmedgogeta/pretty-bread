@@ -256,6 +256,14 @@ form {
   width: 50% !important;
 }
 
+/* not_found */
+.not_found__container--header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* tienda.php */
 
 .store__container {
