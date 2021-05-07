@@ -18,7 +18,23 @@ if (!function_exists('viewPath')) {
 if (!function_exists('open_db_connection')) {
   function open_db_connection()
   {
-    # code...
+    global $dbcon;
+
+    $db = 'pretty_bread';
+    $hostname = 'localhost';
+    $user = 'root';
+    $pass = '';
+
+    $dbcon = new mysqli($hostname, $user, $pass, $db) or die("Error al conectar con la base de datos");
+    mysqli_set_charset($dbcon, 'utf8');
+  }
+}
+
+if (!function_exists('close_db_connection')) {
+  function close_db_connection()
+  {
+    global $dbcon;
+    mysqli_close($dbcon);
   }
 }
 
