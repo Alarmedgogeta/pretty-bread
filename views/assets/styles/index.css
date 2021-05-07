@@ -71,12 +71,11 @@ body {
 .footer {
   display: flex;
   width: 100%;
-  background-color: goldenrod;
 }
 
 .footer ul {
   width: 100%;
-  background-color: grey;
+  background-color: goldenrod;
   display: flex;
   justify-content: center;
   list-style-type: none;
