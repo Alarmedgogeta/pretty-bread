@@ -81,7 +81,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 20px 0;
-  border-radius: 10px;
   border: 3px dotted maroon;
 }
 
@@ -303,6 +302,10 @@ form {
 .product_card__content--price,
 .product_card__content--descripcion{
   font-family: cursive;
+}
+.btn-add{
+  background-color: chartreuse;
+  font-weight: bold;
 }
 
 /* mis_direcciones.php */
