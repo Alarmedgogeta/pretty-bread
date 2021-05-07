@@ -74,7 +74,7 @@ if ($hasUser) {
               <a href="/cuenta/carrito">Mi carrito</a>
             </li>
             <li>
-              <a href="/cuenta/logout">Cerrar sesion</a>
+              <a href="/cuenta/logout">Cerrar Sesión</a>
             </li>
           </ul>
         <?php

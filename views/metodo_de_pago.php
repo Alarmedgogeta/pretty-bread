@@ -1,1 +1,1 @@
-<h1>Metodo de pago</h1>
+<h1>Método de pago</h1>

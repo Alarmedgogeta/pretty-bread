@@ -30,7 +30,7 @@ if ( isset($_SESSION['error']) ) {
           </div>
           <div class="formulario--grupo">
             <div class="formulario--input w-100">
-              <label for="pass">Contrasena:</label>
+              <label for="pass">Contraseña:</label>
               <input id="pass" name="pass" type="text" required />
             </div>
           </div>
