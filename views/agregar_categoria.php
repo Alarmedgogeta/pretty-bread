@@ -1,10 +1,10 @@
 <div class="main">
   <div class="main__container">
     <div class="main__container--title">
-      <h1>Agregar Producto</h1>
+      <h1>Agregar categoria</h1>
     </div>
     <div class="main__container--content">
-      <form action="/productos/agregar" method="post" enctype="multipart/form-data">
+      <form action="/categorias/agregar" method="post" enctype="multipart/form-data">
         <div class="formulario--grupo">
           <div class="formulario--input w-100">
             <label for="nombre">Nombre:</label>
@@ -15,12 +15,6 @@
           <div class="formulario--input w-100">
             <label for="descripcion">Descripcion:</label>
             <input id="descripcion" name="descripcion" type="text" required />
-          </div>
-        </div>
-        <div class="formulario--grupo">
-          <div class="formulario--input w-100">
-            <label for="precio">Precio:</label>
-            <input id="precio" name="precio" type="number" required />
           </div>
         </div>
         <div class="formulario--grupo">

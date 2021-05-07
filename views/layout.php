@@ -70,7 +70,7 @@ if ($hasUser) {
               <a href="/cuenta/direcciones">Direcciones</a>
             </li>
             <li>
-              <a href="/cuenta/carrito">Mi carrito</a>
+              <a href="/cuenta/carrito">Mi carrito <i class="fas fa-shopping-cart"></i></a>
             </li>
             <li>
               <a href="/cuenta/logout">Cerrar sesion</a>

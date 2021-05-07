@@ -12,6 +12,7 @@ class Producto extends Entity
   public $portada;
 
   private static $NOMBRE_DE_LA_ENTIDAD = 'productos';
+  private static $URL_BASE = 'http://localhost/uploads/img/products/';
   
   public function __construct(
     string $nombre,
@@ -25,7 +26,7 @@ class Producto extends Entity
     $this->nombre = $nombre;
     $this->descripcion = $descripcion;
     $this->precio = $precio;
-    $this->portada = $portada;
+    $this->portada = startsWith($portada, Producto::$URL_BASE) ? $portada : Producto::$URL_BASE . $portada;
   }
 
   function loadInstance()

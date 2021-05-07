@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  overflow: scroll;
+  display: flex;
   background-color: #f1f1f1;
   padding: 20px 10px;
 }
@@ -366,6 +366,12 @@ form {
 
 .item_card__container--cover {
   width: 20%;
+}
+
+.item_card__container--cover img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .item_card__container--content {
