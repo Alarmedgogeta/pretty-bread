@@ -1,3 +1,9 @@
+<?php
+$hasUser = isset($_SESSION['user']);
+if ($hasUser) {
+  $user = $_SESSION['user'];
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,6 +22,24 @@
     <a href="/inicio" class="logo">Pretty Bread</a>
     <ul class="header-right">
       <li class="header-menu">
+        <?php
+        if ($hasUser && $user->id_tipo === 1) {
+        ?>
+          <a class="<?= $page === 'productos' ? 'active' : '' ?>" href="/productos">Productos</a>
+        <?php
+        }
+        ?>
+      </li>
+      <li class="header-menu">
+        <?php
+        if ($hasUser && $user->id_tipo === 1) {
+        ?>
+          <a class="<?= $page === 'categorias' ? 'active' : '' ?>" href="/categorias">Categorias</a>
+        <?php
+        }
+        ?>
+      </li>
+      <li class="header-menu">
         <a class="<?= $page === 'tienda' ? 'active' : '' ?>" href="/tienda">Tienda</a>
       </li>
       <li class="header-menu">
@@ -25,15 +49,48 @@
         <a class="<?= $page === 'contacto' ? 'active' : '' ?>" href="/contacto">Contáctanos</a>
       </li>
       <li class="header-menu">
-        <a class="<?= $page === 'cuenta' ? 'active' : '' ?>" href="#">Cuenta <i class="fas fa-sort-down"></i></a>
-        <ul class="header-sub-menu">
-          <li>
-            <a href="/cuenta/login">Iniciar Sesión</a>
-          </li>
-          <li>
-            <a href="/cuenta/registrarme">Registrarme</a>
-          </li>
-        </ul>
+        <?php
+        if ($hasUser) {
+        ?>
+          <a class="<?= $page === 'pedidos' ? 'active' : '' ?>" href="/pedidos">Pedidos</a>
+        <?php
+        }
+        ?>
+      </li>
+      <li class="header-menu">
+        <?php
+        if ($hasUser) {
+        ?>
+          <a class="<?= $page === 'cuenta' ? 'active' : '' ?>" href="/cuenta/datos"><?= "Hola $user->nombre $user->apellidos" ?> <i class="fas fa-sort-down"></i></a>
+          <ul class="header-sub-menu">
+            <li>
+              <a href="/cuenta/datos">Mis datos</a>
+            </li>
+            <li>
+              <a href="/cuenta/direcciones">Direcciones</a>
+            </li>
+            <li>
+              <a href="/cuenta/carrito">Mi carrito</a>
+            </li>
+            <li>
+              <a href="/cuenta/logout">Cerrar sesion</a>
+            </li>
+          </ul>
+        <?php
+        } else {
+        ?>
+          <a class="<?= $page === 'cuenta' ? 'active' : '' ?>" href="#">Cuenta <i class="fas fa-sort-down"></i></a>
+          <ul class="header-sub-menu">
+            <li>
+              <a href="/cuenta/login">Iniciar Sesión</a>
+            </li>
+            <li>
+              <a href="/cuenta/registrarme">Registrarme</a>
+            </li>
+          </ul>
+        <?php
+        }
+        ?>
       </li>
     </ul>
   </div>
