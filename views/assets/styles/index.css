@@ -297,6 +297,11 @@ form {
 .product_card__content--add {
   margin: 10px;
 }
+.product_card__content--name,
+.product_card__content--price,
+.product_card__content--descripcion{
+  font-family: cursive;
+}
 
 /* mis_direcciones.php */
 
