@@ -2,15 +2,14 @@
 
 namespace Controllers;
 
-class InicioController
+class CompraController
 {
   public function index()
   {
     return view('inicio');
   }
-
-  public function inicio()
+  public function metodo_de_pago()
   {
-    return view('inicio');
+    return view('metodo_de_pago');
   }
 }

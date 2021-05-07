@@ -2,10 +2,10 @@
 
 namespace Controllers;
 
-class NotFoundController
+class ContactoController
 {
   public function index()
   {
-    return view('not_found');
+    return view('contacto');
   }
 }
