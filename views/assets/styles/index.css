@@ -98,7 +98,6 @@ body {
   }
 }
 
-
 /* inicio.php */
 
 .categories {
@@ -118,10 +117,27 @@ body {
 .category {
   width: 33%;
   display: flex;
+  justify-content: center;
 }
 
 .category__container {
   position: relative;
+  width: 100%;
+}
+
+.category__container--name {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__container--name span {
+  color: white;
 }
 
 .category__container--img {
@@ -130,9 +146,94 @@ body {
 }
 
 .category__container--img img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 30vw;
+}
+
+/* acerda_de.php */
+
+.main {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+.main__container {
+  margin: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+}
+
+.main__container--title {
+  width: 100%;
+  border-bottom: solid whitesmoke 1px;
+  margin-bottom: 20px;
+}
+
+.main__container--content {
+  width: 100%;
+}
+
+/* contacto.php */
+
+input,
+select {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.formulario--grupo {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.formulario--input {
+  padding-right: 20px;
+}
+
+.formulario--input label {
+  font-style: oblique;
+}
+
+.formulario--final {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.boton {
+  min-width: 40%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgb(0, 39, 157);
+  border-color: rgb(4, 30, 108);
+  color: white;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: rgb(92, 0, 153);
+  border-color: rgb(71, 2, 117);
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-50 {
+  width: 50% !important;
 }
