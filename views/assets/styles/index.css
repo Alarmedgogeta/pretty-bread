@@ -8,13 +8,13 @@ body {
   display: flex;
   justify-content: space-between;
   
-  background-color: rgb(216, 140, 0);
+  background-color: saddlebrown;
   padding: 20px 10px;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: rgb(255, 254, 254);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -78,13 +78,12 @@ body {
 
 .footer ul {
   width: 100%;
-  background-color: rgb(248, 190, 44);
+  background-color: saddlebrown;
   display: flex;
   justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 20px 0;
-  border: 3px dotted maroon;
   border-radius: 5px;
 }
 
@@ -103,22 +102,22 @@ body {
   cursor: pointer;
 }
 .fa-facebook-square{
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 .fa-twitter-square{
-  color: rgb(0, 195, 255);
+  color: rgb(230, 235, 236);
 }
 
 .fa-instagram-square{
-  color: rgb(255, 0, 200);
+  color: rgb(245, 245, 245);
 }
 
 .footer-link:active{
   color: rgb(255, 255, 255);
 }
 .footer-link:link{
-  color: rgb(4, 22, 124);
+  color: rgb(8, 236, 225);
 }
 
 @media screen and (max-width: 480px) {
@@ -250,7 +249,7 @@ form {
     margin-top: 30px;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -259,14 +258,17 @@ form {
   padding: 10px 15px;
   border-radius: 10px;
   font-weight: 600;
-  background-color: rgb(0, 39, 157);
+  background-color: #A05000;
   border-color: rgb(4, 30, 108);
+  text-align: center;
   color: white;
+  text-decoration:none;
+  font-size: large;
 }
 
 .boton:hover {
   cursor: pointer;
-  background-color: rgb(92, 0, 153);
+  background-color: #FFB81E;
   border-color: rgb(71, 2, 117);
 }
 
@@ -291,7 +293,7 @@ form {
 .store__container {
   width: 85%;
   display: flex;
-  background-color: rgb(218, 153, 34);
+  background-color: rgb(243, 243, 243);
 }
 .products {
   width: 100%;
@@ -304,13 +306,14 @@ form {
 .produtcs__container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .product_card {
   width: 30%;
   border: solid black 1px;
   border-radius: 15px;
-  background-color: khaki;
+  background-color: #FFB81E;
 }
 
 .product_card__container {
@@ -322,14 +325,16 @@ form {
   width: 100%;
   height: 150px;
   padding: 20px 0;
-  border-bottom: rgb(153, 125, 0) solid 1px;
+  border-bottom: solid 3px;
   margin-bottom: 15px;
 }
 
 .product_card__container--cover img {
-  width: 100%;
+  width: 95%;
   height: 100%;
   object-fit: cover;
+  margin-left: 8px;
+  border-radius: 10px;
 }
 
 .product_card__content {
@@ -344,16 +349,42 @@ form {
 .product_card__content--add {
   margin: 10px;
 }
+.product_card__content--add
+{
+  display: flex;
+  justify-content: center;
+}
 .product_card__content--name,
 .product_card__content--price,
 .product_card__content--descripcion{
   font-family: cursive;
 }
+.product_card__content--name
+{
+  font-weight: bolder;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  background: yellow;
+  border-radius: 10px;
+  border: 1px solid black
+}
 .btn-add{
-  background-color: chartreuse;
+  background-color: #A05000;
   font-weight: bold;
+  color: white;
+  height: 30px;
+  font-size: large;
+  border-radius: 10px;
 }
 
+.btn-add:hover
+{
+   color: black;
+  cursor: pointer;
+  background-color: #e4f30d;
+  border-color: #A05000;
+}
 /* mis_direcciones.php */
 
 .addresses__container {
@@ -393,14 +424,18 @@ form {
   padding: 10px 15px;
   border-radius: 10px;
   font-weight: 600;
-  background-color: rgb(0, 39, 157);
+  background-color: #A05000;
+  margin: 5px;
+  display: table;
   border-color: rgb(4, 30, 108);
   color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 .address_card__container--actions a:hover {
   cursor: pointer;
-  background-color: rgb(92, 0, 153);
+  background-color: #FFB81E;
   border-color: rgb(71, 2, 117);
 }
 
@@ -442,20 +477,25 @@ form {
   width: 20%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 
 .item_card__container--actions a {
   width: 45%;
   padding: 10px 15px;
   border-radius: 10px;
   font-weight: 600;
-  background-color: rgb(0, 39, 157);
+  background-color: #A05000;
+  margin: 5px;
+  display: table;
   border-color: rgb(4, 30, 108);
   color: white;
+  text-decoration: none;
 }
 
 .item_card__container--actions a:hover {
   cursor: pointer;
-  background-color: rgb(92, 0, 153);
+  background-color: #FFB81E;
   border-color: rgb(71, 2, 117);
 }

@@ -34,7 +34,7 @@ $rows = array_chunk($productos, 3);
                       <span class="product-descripcion"><?= $product->descripcion ?></span>
                     </div>
                     <div class="product_card__content--add">
-                      <button class="btn-add">Agregar al carrito</button>
+                      <button  class="btn-add">Agregar al carrito</button>
                     </div>
                   </div>
                 </div>

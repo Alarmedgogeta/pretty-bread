@@ -19,7 +19,7 @@
         </div>
         <div class="formulario--grupo">
           <div class="formulario--input w-100">
-            <label for="cover">Portada:</label>
+            <label for="cover">Imagen:</label>
             <input id="cover" name="cover" type="file" required />
           </div>
         </div>
